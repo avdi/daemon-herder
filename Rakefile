@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "daemon-herder"
-    gem.summary = %Q{An ejection seat for Ruby apps}
+    gem.summary = %Q{Daemon managment library}
     gem.description = %Q{TODO: longer description of your gem}
     gem.email = "avdi@avdi.org"
     gem.homepage = "http://github.com/avdi/daemon-herder"
