@@ -11,6 +11,7 @@ begin
     gem.homepage = "http://github.com/avdi/daemon-herder"
     gem.authors = ["Avdi Grimm"]
     gem.add_dependency "daemons", "~> 1.0"
+    gem.add_dependency "daemon_controller", "~> 0.2.5"
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
