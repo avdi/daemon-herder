@@ -10,6 +10,7 @@ begin
     gem.email = "avdi@avdi.org"
     gem.homepage = "http://github.com/avdi/daemon-herder"
     gem.authors = ["Avdi Grimm"]
+    gem.add_dependency "daemons", "~> 1.0"
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
@@ -22,6 +23,7 @@ require 'spec/rake/spectask'
 Spec::Rake::SpecTask.new(:spec) do |spec|
   spec.libs << 'lib' << 'spec'
   spec.spec_files = FileList['spec/**/*_spec.rb']
+  spec.spec_files += FileList['test/**/*_test.rb']
 end
 
 Spec::Rake::SpecTask.new(:rcov) do |spec|
