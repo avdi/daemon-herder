@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'daemon_herder/daemon_command'
+
+DaemonCommand.from_args(ARGV).run!
